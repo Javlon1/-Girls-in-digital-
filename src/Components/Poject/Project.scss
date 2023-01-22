@@ -1,0 +1,445 @@
+@import '../../Assets/Sass/Veriables.scss';
+@import 'https://unpkg.com/aos@2.3.1/dist/aos.css';
+
+.project{
+    background-color:$bcProject;
+    background-image: url('../../Assets/Img/project.png'), url('../../Assets//Img/project1.png');
+    background-repeat: no-repeat;
+    background-position: top right, bottom left;
+    margin-top: -120px;
+    .container{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        &__title{
+            margin-top: 300px;
+            display: flex;
+            justify-content: center;
+        }
+        &__project1{
+            margin-left: 140px;
+            justify-content: center;
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+            background: #fff;
+            padding-right: 27px;
+            width: 1150px;
+            height: 500px;
+            border-radius: .5rem;
+            &__left{
+                margin-left: -130px;
+                &__img{
+                    border-radius: .5rem;
+                    width: 720px;
+                    height: 405px;
+                    object-fit: cover;
+                }
+            }
+            &__right{
+                &__text{
+                    padding: 94px 0;    
+                    font-family: 'Comfortaa';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 21px;
+                    line-height: 36px;
+                    text-align: right;
+                }
+            }
+        }
+        &__project2{
+            display: flex;
+            align-items: center;
+            margin-top: 100px;
+            width: 1000px;
+            height: 300px;
+            background: #fff;
+            margin-right: 250px;
+            padding-left: 27px;
+            border-radius: .5rem;
+            margin-bottom: 100px;
+            &__left{
+                &__text{
+                    font-family: 'Comfortaa';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 28px;
+                    line-height: 36px;
+                }
+            }
+            &__right{
+                margin-right: -250px;
+                &__img{
+                    border-radius: .5rem;
+                    width: 583px;
+                    height: 380px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1399px) {
+    .project{
+        .container{
+            &__title{
+                margin-top: 250px;
+            }
+            &__project1{
+                margin-left: 130px;
+                margin-top: 50px;
+                width: 1000px;
+                height: 450px;
+                &__left{
+                    margin-left: -100px;
+                    &__img{
+                        width: 600px;
+                        height: 350px;
+                    }
+                }
+                &__right{
+                    &__text{
+                        font-size: 17px;
+                    }
+                }
+            }
+            &__project2{
+                width: 900px;
+                height: 250px;
+                margin-right: 170px;
+                &__left{
+                    &__text{
+                        font-size: 20px;
+                    }
+                }
+                &__right{
+                    margin-right: -190px;
+                    &__img{
+                        width: 563px;
+                        height: 355px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .project{
+        .container{
+            &__title{
+                margin-top: 230px;
+            }
+            &__project1{
+                margin-left: 130px;
+                margin-top: 30px;
+                width: 950px;
+                height: 400px;
+                &__left{
+                    margin-left: -90px;
+                    &__img{
+                        width: 550px;
+                        height: 340px;
+                    }
+                }
+                &__right{
+                    &__text{
+                        font-size: 15px;
+                    }
+                }
+            }
+            &__project2{
+                width: 850px;
+                height: 240px;
+                margin-right: 140px;
+                &__left{
+                    &__text{
+                        font-size: 18px;
+                    }
+                }
+                &__right{
+                    margin-right: -180px;
+                    &__img{
+                        width: 560px;
+                        height: 350px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .project{
+        .container{
+            &__title{
+                margin-top: 230px;
+            }
+            &__project1{
+                margin-left: 80px;
+                margin-top: 50px;
+                width: 850px;
+                height: 350px;
+                &__left{
+                    margin-left: -70px;
+                    &__img{
+                        width: 500px;
+                        height: 300px;
+                    }
+                }
+                &__right{
+                    &__text{
+                        font-size: 12px;
+                    }
+                }
+            }
+            &__project2{
+                width: 750px;
+                height: 200px;
+                margin-right: 120px;
+                &__left{
+                    &__text{
+                        font-size: 14px;
+                    }
+                }
+                &__right{
+                    margin-right: -120px;
+                    &__img{
+                        width: 530px;
+                        height: 300px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .project{
+        .container{
+            &__title{
+                margin-top: 70px;
+            }
+            &__project1{
+                margin-left: 80px;
+                margin-top: 30px;
+                width: 600px;
+                height: 350px;
+                &__left{
+                    margin-left: -80px;
+                    &__img{
+                        width: 390px;
+                        height: 280px;
+                    }
+                }
+                &__right{
+                    &__text{
+                        font-weight: 700;
+                        font-size: 11px;
+                        line-height: 20px;
+                    }
+                }
+            }
+            &__project2{
+                width: 600px;
+                height: 200px;
+                margin-right: 80px;
+                &__left{
+                    &__text{
+                        font-weight: 700;
+                        font-size: 11px;
+                        line-height: 20px;
+                    }
+                }
+                &__right{
+                    margin-right: -80px;
+                    &__img{
+                        width: 390px;
+                        height: 280px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .project{
+        background-image: url('../../Assets//Img/project1.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        .container{
+            &__title{
+                margin-top: 130px;
+            }
+            &__project1{
+                margin-left: 0;
+                margin-top: 200px;
+                width: 100%;
+                height: 250px;
+                position: relative;
+                padding: 0;
+                &__left{
+                    position: absolute;
+                    margin-left: 0;
+                    top: -170px;
+                    width: 80%;
+                    &__img{
+                        width: 100%;
+                        height: 280px;
+                    }
+                }
+                &__right{
+                    top: 15px;
+                    position: absolute;
+                    padding: 10px 30px;
+                    &__text{
+                        font-weight: 600;
+                        font-size: 11px;
+                        line-height: 20px;
+                        text-align: center;
+                    }
+                }
+            }
+            &__project2{
+                margin-top: 250px;
+                width: 100%;
+                height: 200px;
+                margin-right: 0;
+                position: relative;
+                padding: 0;
+                &__left{
+                    position: absolute;
+                    top: 100px;
+                    &__text{
+                        text-align: center;
+                        padding: 0 20px;
+                    }
+                }
+                &__right{
+                    position: absolute;
+                    top: -200px;
+                    left: 10%;
+                    width: 80%;
+                    margin-right: 0;
+                    &__img{
+                        width: 100%;
+                        height: 280px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 539px) {
+    .project{
+        .container{
+            &__project1{
+                height: 270px;
+            }
+            &__project2{
+                height: 200px;
+            }
+        }
+    }
+}
+
+@media (max-width: 499px) {
+    .project{
+        .container{
+            &__project1{
+                height: 280px;
+            }
+            &__project2{
+                height: 200px;
+            }
+        }
+    }
+}
+
+@media (max-width: 444px) {
+    .project{
+        .container{
+            &__project1{
+                height: 300px;
+            }
+            &__project2{
+                height: 200px;
+            }
+        }
+    }
+}
+
+@media (max-width: 393px) {
+    .project{
+        .container{
+            &__project1{
+                height: 325px;
+            }
+            &__project2{
+                height: 200px;
+            }
+        }
+    }
+}
+
+@media (max-width: 370px) {
+    .project{
+        .container{
+            &__project1{
+                height: 345px;
+            }
+        }
+    }
+}
+
+@media (max-width: 361px) {
+    .project{
+        .container{
+            &__project1{
+                height: 365px;
+                &__right{
+                    &__text{
+                        line-height: 17.5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 351px) {
+    .project{
+        .container{
+            &__title{
+                margin-top: 200px;
+            }
+            &__project1{
+                height: 345px;
+            }
+        }
+    }
+}
+
+@media (max-width: 328px) {
+    .project{
+        .container{
+            &__title{
+                margin-top: 200px;
+            }
+            &__project1{
+                height: 345px;
+                &__right{
+                    &__text{
+                        font-weight: 700;
+                        font-size: 11px;
+                        line-height: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

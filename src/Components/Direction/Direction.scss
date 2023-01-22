@@ -1,0 +1,267 @@
+@import '../../Assets/Sass/Veriables.scss';
+
+.direction {
+    background: url('../../Assets/Img/direction.png');
+    background-repeat: no-repeat;
+    height: 605px;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 100%;
+        padding: 35px;
+
+        &__title {
+            font-family: 'Comfortaa';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 129.5%;
+            color: #fff;
+        }
+
+        &__text {
+            font-family: 'Comfortaa';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 129.5%;
+            text-align: center;
+            color: #fff;
+        }
+
+        &__direc {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            flex-wrap: wrap;
+
+            &__item {
+                background: rgba(189, 0, 255, 0.4);
+                backdrop-filter: blur(2.5px);
+                border-radius: .5rem;
+                width: 180px;
+                height: 240px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
+
+                &__text {
+                    width: 80%;
+                    font-family: 'Comfortaa';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 129.5%;
+                    color: #fff;
+                }
+
+                &__img {
+                    border-radius: 4px;
+                    width: 135px;
+                    height: 128px;
+                }
+            }
+        }
+
+        &__btn {
+            background: $pink;
+            color: #fff;
+            border: transparent;
+            width: 151px;
+            height: 36px;
+            border-radius: 4px;
+        }
+    }
+}
+
+@media (max-width: 1399px) {
+    .direction {
+        background: url('../../Assets/Img/direction.png');
+        background-repeat: no-repeat;
+        background-size: 100% 850px;
+        object-fit: cover;
+        height: 850px;
+        .container {
+            &__direc {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                flex-wrap: wrap;
+                &__item {
+                    margin: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .direction {
+        background-size: 100% 1100px;
+        height: 1100px;
+    }
+}
+
+@media (max-width: 510px) {
+    .direction {
+        background: url('../../Assets/Img/direction.png');
+        background-repeat: no-repeat;
+        background-size: 100% 1100px;
+        height: 1100px;
+        .container {
+            &__title {
+                font-size: 32px;
+            }
+    
+            &__text {
+                font-size: 20px;
+            }
+            &__direc {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                flex-wrap: wrap;
+                &__item {
+                    margin: 15px;
+                    width: 160px;
+                    height: 240px;
+                    &__text{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 449px) {
+    .direction {
+        .container {
+            &__title {
+                font-size: 32px;
+            }
+    
+            &__text {
+                font-size: 20px;
+            }
+            &__direc {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                flex-wrap: wrap;
+                &__item {
+                    margin: 10px;
+                    width: 150px;
+                    height: 240px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 409px) {
+    .direction {
+        background-size: 100% 1000px;
+        height: 1000px;
+        .container {
+            &__title {
+                font-size: 30px;
+            }
+    
+            &__text {
+                font-size: 18px;
+            }
+            &__direc {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                flex-wrap: wrap;
+                &__item {
+                    margin: 9px;
+                    width: 140px;
+                    height: 220px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 385px) {
+    .direction {
+        background-size: 100% 900px;
+        height: 900px;
+        .container {
+            &__title {
+                font-size: 30px;
+            }
+    
+            &__text {
+                font-size: 18px;
+            }
+            &__direc {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                flex-wrap: wrap;
+                &__item {
+                    margin: 9px;
+                    width: 130px;
+                    height: 180px;
+                    &__text{
+                        font-size: 10px;
+                    }
+                    &__img{
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 365px) {
+    .direction {
+        background-size: 100% 800px;
+        height: 800px;
+        .container {
+            &__title {
+                font-size: 30px;
+            }
+    
+            &__text {
+                font-size: 18px;
+            }
+            &__direc {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                flex-wrap: wrap;
+                &__item {
+                    margin: 9px;
+                    width: 120px;
+                    height: 170px;
+                    &__text{
+                        margin-top: 10px;
+                        font-size: 9px;
+                    }
+                    &__img{
+                        width: 80%;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

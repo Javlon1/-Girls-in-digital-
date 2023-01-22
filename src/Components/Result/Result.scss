@@ -1,0 +1,55 @@
+.result{
+    background: url('../../Assets/Img/Result.png');
+    background-repeat: no-repeat;
+    height: 588px;
+    .container{
+        &__result{
+            &__title{
+                color: #fff;
+                font-family: 'Comfortaa';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 42px;
+                line-height: 47px;
+                text-align: center;
+                margin-top: 70px;
+            }
+            &__text{
+                margin-top: 40px;
+                color: #fff;
+                font-family: 'Comfortaa';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 28px;
+                line-height: 31px;
+                text-align: center;
+            }
+            &__list{
+                margin-top: 96px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &__item{
+                    text-align: center;
+                    &__text{
+                        width: 250px;
+                        margin-top: 20px;
+                        font-family: 'Comfortaa';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 20px;
+                        text-align: center;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .result{
+        display: none;
+    }
+}

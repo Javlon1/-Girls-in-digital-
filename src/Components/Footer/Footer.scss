@@ -1,0 +1,190 @@
+@import '../../Assets/Sass/Veriables.scss';
+
+.footer{
+    background: $bcFooter;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__img{
+            text-align: center;
+            width: 191px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+        &__list1{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 700px;
+            &__item{
+                a{
+                    color: #fff;
+                    font-family: 'Comfortaa';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 18px;
+                }
+            }
+        }
+        &__list2{
+            &__item1{
+                margin-left: 55px;
+                &__list{
+                    display: flex;
+                    align-items: center;
+                    width: 100px;
+                    justify-content: space-between;
+                    &__item{
+                        &__btn{
+                            border: transparent;
+                            background: transparent;
+                            color: #C8C8C8;
+                        }
+                    }
+                }
+            }
+            &__item2{
+                margin-top: 20px;
+                &__list{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 220px;
+                    &__item{
+                        a{
+                            font-size: 2rem;
+                            color: #fff;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    .footer{
+        .container{
+            &__list1{
+                width: 600px;
+                &__item{
+                    a{
+                        font-size: 15px;
+                    }
+                }
+            }
+            &__list2{
+                &__item2{
+                    margin-top: 20px;
+                    &__list{
+                        width: 220px;
+                        &__item{
+                            a{
+                                font-size: 1.7rem;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .footer{
+        .container{
+            &__list1{
+                width: 500px;
+                &__item{
+                    a{
+                        font-size: 12px;
+                    }
+                }
+            }
+            &__list2{
+                &__item2{
+                    &__list{
+                        width: 200px;
+                        &__item{
+                            a{
+                                font-size: 1.5rem;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .footer{
+        .container{
+            &__list1{
+                width: 400px;
+                &__item{
+                    a{
+                        font-size: 10px;
+                    }
+                }
+            }
+            &__list2{
+                &__item1{
+                    margin-left: 10px;
+                }
+                &__item2{
+                    &__list{
+                        width: 130px;
+                        &__item{
+                            a{
+                                font-size: 1.1rem;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 767px) {
+    .footer{
+        height: 400px;
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            &__list1{
+                margin-top: 20px;
+                flex-direction: column;
+                width: 400px;
+                &__item{
+                    a{
+                        font-size: 13px;
+                    }
+                }
+            }
+            &__list2{
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+.act{
+    color: #fff !important;
+}

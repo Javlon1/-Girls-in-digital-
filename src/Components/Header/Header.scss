@@ -1,0 +1,216 @@
+@import '../../Assets/Sass/Veriables.scss';
+.header{
+    background: transparent;
+    height: 135px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 999;
+    .container{
+        &__nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &__hamberger{
+                display: none;
+            }
+            &__btnHam{
+                display: none;
+            }
+            &__list{
+                width: 800px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &__item{
+                    a{
+                        color: #fff;
+                        font-family: 'Comfortaa';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 18px
+                    }
+                }
+                &__select{
+                    background: transparent;
+                    border: transparent;
+                    color: #fff;
+                }
+                &__btn{
+                    background: $pink;
+                    border-radius: 4px;
+                    border: transparent;
+                    width: 151px;
+                    height: 36px;
+                    color: #fff;
+                    font-family: 'Comfortaa';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .header{
+        display: flex;
+        align-items: center;
+        position: fixed;
+        .container{
+            &__nav{
+                &__img{
+                    display: flex;
+                    align-items: center;
+                }
+                &__list{
+                    width: 600px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    &__item{
+                        a{
+                            color: #fff;
+                            font-size: 12px;
+                        }
+                    }
+                    &__btn{
+                        width: 120px;
+                        height: 30px;
+                        font-size: .7rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .header{
+        display: flex;
+        align-items: center;
+        position: fixed;
+        .container{
+            &__nav{
+                &__img{
+                    display: flex;
+                    align-items: center;
+                    &__text{
+                        display: none;
+                    }
+                }
+                &__list{
+                    width: 550px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    &__item{
+                        a{
+                            color: #fff;
+                            font-size: 11px;
+                        }
+                    }
+                    &__btn{
+                        font-size: 10px;
+                        width: 90px;
+                        height: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .header{
+        display: flex;
+        align-items: center;
+        position: fixed;
+        .container{
+            &__nav{
+                &__list{
+                    display: none;
+                }
+                &__btnHam{
+                    width: 45px;
+                    font-size: 1.5rem;
+                    display: block;
+                    background: #fff;
+                    color: $pink;
+                    border: transparent;
+                    border-radius: 4px;
+                }
+                &__hamberger{
+                    margin-top: 630px;
+                    background: $pink;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    height: 600px;
+                    width: 100%;
+                    padding: 30px;
+                    &__item{
+                        a{
+                            font-family: 'Comfortaa';
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 16px;
+                            line-height: 18px;
+                            color: #fff;
+                        }
+                    }
+                    &__select{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 50%;
+                        margin: 0 auto;
+                        &__item{
+                            button{
+                                background: transparent;
+                                border: transparent;
+                                color: #fff;
+                                font-family: 'Comfortaa';
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 17.0127px;
+                                line-height: 197.19%;
+                            }
+                        }
+                    }
+                    &__btn{
+                        background: #FFF;
+                        border-radius: 4px;
+                        border: transparent;
+                        width: 151px;
+                        height: 36px;
+                        color: $pink;
+                        font-family: 'Comfortaa';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.active{
+    display: flex !important;
+}
+
+.header__bc{
+    background: $pink;
+}
+
+.active__btn{
+    background: #fff !important;
+    color: $pink !important;
+}

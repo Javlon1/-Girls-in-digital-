@@ -1,0 +1,69 @@
+@import '../../Assets/Sass/Veriables.scss';
+.registration{
+    background: $bcProject url('../../Assets/Img/project1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 800px;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 80%;
+        &__title{
+            margin-top: 80px;
+            font-family: 'Comfortaa';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 47px;
+        }
+        &__form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 800px;
+            &__samp{
+                width: 340px;
+                margin: 30px;
+                label{
+                    font-family: 'Comfortaa';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #858585;
+                }
+                &__inp{
+                    color: #000;
+                    width: 100%;
+                    height: 40px;
+                    background: transparent;
+                    border: transparent;
+                    border-bottom: 1px solid $pink;
+                }
+            }
+            &__btn{
+                margin-top: 20px;
+                background: $pink;
+                border: transparent;
+                border-radius: 4px;
+                width: 198px;
+                height: 50px;
+                color: #fff;
+                font-family: 'Comfortaa';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 19.4978px;
+                line-height: 22px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .registration{
+        display: none;
+    }
+}

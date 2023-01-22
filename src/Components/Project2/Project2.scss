@@ -1,0 +1,141 @@
+@import '../../Assets/Sass/Veriables.scss';
+.project2{
+    background: $bcProject url('../../Assets/Img/project.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    .container{
+        &__project1{
+            margin-left: 140px;
+            justify-content: center;
+            margin-top: 100px;
+            display: flex;
+            align-items: center;
+            background: #fff;
+            padding-right: 27px;
+            width: 1150px;
+            height: 500px;
+            border-radius: .5rem;
+            &__left{
+                margin-left: -130px;
+                &__img{
+                    border-radius: .5rem;
+                    width: 720px;
+                    height: 405px;
+                    object-fit: cover;
+                }
+            }
+            &__right{
+                &__text{
+                    padding: 94px 0;    
+                    font-family: 'Comfortaa';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 21px;
+                    line-height: 36px;
+                    text-align: right;
+                }
+            }
+        }
+        &__project2{
+            display: flex;
+            align-items: center;
+            margin-top: 100px;
+            width: 1100px;
+            height: 500px;
+            background: #fff;
+            margin-right: 250px;
+            padding-left: 27px;
+            border-radius: .5rem;
+            margin-bottom: 100px;
+            &__left{
+                &__text{
+                    font-family: 'Comfortaa';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 28px;
+                    line-height: 36px;
+                }
+            }
+            &__right{
+                margin-right: -170px;
+                &__img{
+                    border-radius: .5rem;
+                    width: 583px;
+                    height: 380px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1300px) {  
+    .project2{
+        display: none;
+        background: $bcProject url('../../Assets/Img/project.png');
+        background-repeat: no-repeat;
+        background-position: right;
+        .container{
+            &__project1{
+                margin-left: 140px;
+                justify-content: center;
+                margin-top: 100px;
+                display: flex;
+                align-items: center;
+                background: #fff;
+                padding-right: 27px;
+                width: 1150px;
+                height: 500px;
+                border-radius: .5rem;
+                &__left{
+                    margin-left: -130px;
+                    &__img{
+                        border-radius: .5rem;
+                        width: 720px;
+                        height: 405px;
+                        object-fit: cover;
+                    }
+                }
+                &__right{
+                    &__text{
+                        padding: 94px 0;    
+                        font-family: 'Comfortaa';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 21px;
+                        line-height: 36px;
+                        text-align: right;
+                    }
+                }
+            }
+            &__project2{
+                display: flex;
+                align-items: center;
+                margin-top: 100px;
+                width: 1100px;
+                height: 500px;
+                background: #fff;
+                margin-right: 250px;
+                padding-left: 27px;
+                border-radius: .5rem;
+                margin-bottom: 100px;
+                &__left{
+                    &__text{
+                        font-family: 'Comfortaa';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 28px;
+                        line-height: 36px;
+                    }
+                }
+                &__right{
+                    margin-right: -170px;
+                    &__img{
+                        border-radius: .5rem;
+                        width: 583px;
+                        height: 380px;
+                    }
+                }
+            }
+        }
+    }
+}

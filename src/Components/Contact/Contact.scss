@@ -1,0 +1,62 @@
+@import '../../Assets/Sass/Veriables.scss';
+.contact{
+    background: url('../../Assets/Img/project.png');
+    background-color: $bcProject;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 737px;
+    .container{
+        &__address{
+            margin-top: 80px;
+            display: flex;
+            align-items: center;
+            background: url('../../Assets/Img/contact.png');
+            background-repeat: no-repeat;
+            width: 666px;
+            height: 537px;
+            &__left{
+                margin-left: 90px;
+                &__item{
+                    margin-top: 30px;
+                    display: flex;
+                    align-items: center;
+                    i{
+                        color: #fff;
+                        font-size: 2.5rem;
+                        margin-right: 20px;
+                    }
+                    span{
+                        width: 277px;
+                        p{
+                            font-family: 'Comfortaa';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 26.272px;
+                            line-height: 29px;
+                            color: #FFFFFF;
+                            margin-bottom: 5px;
+                        }
+                        a{
+                            font-family: 'Comfortaa';
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 22.5188px;
+                            line-height: 25px;
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+            &__right{
+                margin-left: 238px;
+                margin-top: -35px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .contact{
+        display: none;
+    }
+}
